@@ -36,13 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.logo-image {
-  height: 200px;
-  width: 200px;
-}
-
-.project-image img {
-  height: 100px;
-  width: 100px;
-}
