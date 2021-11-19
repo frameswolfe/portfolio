@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 // Import the BrowserRouter, Route and Link components
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Projects from './Projects.js';
