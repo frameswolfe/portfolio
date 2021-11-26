@@ -22,14 +22,18 @@ function App() {
             <Link to="/music" className="item">Music</Link>
 
           </div>
+          <div className="logo-image-mirror"></div>
         </div>
-
+        <div className="sidebar-container">
+        <div className="sidebar sidebar-left"></div>
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/music" element={<Music/>} />
         </Routes>
+        <div className="sidebar sidebar-right"></div>
+        </div>
       </div>
     </BrowserRouter>
   );
