@@ -3,7 +3,8 @@ import logo from './logo.png';
 // Import the BrowserRouter, Route and Link components
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Projects from './components/Projects.js';
-import Articles from './components/Articles.js';
+import Home from './components/Home.js';
+import Music from './components/Music.js';
 import About from './components/About.js';
 import './App.css';
 
@@ -12,22 +13,23 @@ function App() {
     <BrowserRouter>
       <div className="App">
 
-        <Routes>
-          <Route exact path="/" element={<Projects/>} />
-          <Route path="/articles" element={<Articles/>} />
-          <Route path="/about" element={<About/>} />
-        </Routes>
-
         <div className="navigation">
-          <img src={logo} className="logo-image" alt="Wolfe" />
+          <Link to="/" className="item"><img src={logo} className="logo-image" alt="Wolfe" /></Link>
           <div className="navigation-sub">
 
-            <Link to="/" className="item">Projects</Link>
-            <Link to="/articles" className="item">Articles</Link>
             <Link to="/about" className="item">About</Link>
+            <Link to="/projects" className="item">Projects</Link>
+            <Link to="/music" className="item">Music</Link>
 
           </div>
         </div>
+
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/music" element={<Music/>} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
