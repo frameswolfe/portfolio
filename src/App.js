@@ -4,7 +4,7 @@ import logo from './logo-white-cropped.png';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Projects from './components/Projects.js';
 import Home from './components/Home.js';
-import Music from './components/Music.js';
+import Contact from './components/Contact.js';
 import About from './components/About.js';
 import './App.css';
 
@@ -19,19 +19,19 @@ function App() {
 
                 <Link to="/about" className="item">About</Link>
                 <Link to="/projects" className="item">Projects</Link>
-                <Link to="/music" className="item">Music</Link>
+                <Link to="/contact" className="item">Contact</Link>
 
               </div>
               {/* <div className="logo-image-mirror"></div> */}
             </div>
           <div className="content">
-            <div className="sidebar-container">
+            <div className="container">
               {/* <div className="sidebar sidebar-left"></div> */}
               <Routes>
                 <Route exact path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />
                 <Route path="/projects" element={<Projects/>} />
-                <Route path="/music" element={<Music/>} />
+                <Route path="/contact" element={<Contact/>} />
               </Routes>
               {/* <div className="sidebar sidebar-right"></div> */}
             </div>
