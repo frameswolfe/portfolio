@@ -1,0 +1,15 @@
+.home-text {
+text-align: left;
+display: flex;
+justify-content: space-between;
+// align-items: baseline;
+}
+
+.home-text-left {
+  margin-right: 16px;
+}
+
+.home-text-right {
+  width: auto;
+  margin-left: 16px;
+}

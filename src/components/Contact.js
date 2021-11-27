@@ -8,7 +8,10 @@ function Contact(props) {
   return(
     <div>
       <h1>Contact</h1>
-      <p>Please feel free to contact me by email at jr.wolfe@outlook.com</p>
+      <div className="contact">
+        <p>Contact me by email at jr.wolfe@outlook.com</p>
+        <p>or via the links below:</p>
+      </div>
       <div className="icons">
         <FontAwesomeIcon icon={faEnvelopeSquare} />
         <FontAwesomeIcon icon={faLinkedin} />
