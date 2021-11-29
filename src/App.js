@@ -6,6 +6,7 @@ import Projects from './components/Projects.js';
 import Home from './components/Home.js';
 import Contact from './components/Contact.js';
 import About from './components/About.js';
+import TheGreenRoom from './components/TheGreenRoom';
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/about" element={<About/>} />
                 <Route path="/projects" element={<Projects/>} />
                 <Route path="/contact" element={<Contact/>} />
+                <Route path="/thegreenroom" element={<TheGreenRoom/>} />
               </Routes>
               {/* <div className="sidebar sidebar-right"></div> */}
             </div>

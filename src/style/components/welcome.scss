@@ -1,15 +1,24 @@
 .home-text {
+  max-height: 50vh;
+position: absolute;
 text-align: left;
+bottom: 0px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
+padding: 24px 16px;
 // align-items: baseline;
 }
 
 .home-text-left {
-  margin-right: 16px;
+  width: 50%;
+  margin-right: 48px;
 }
 
 .home-text-right {
-  width: auto;
-  margin-left: 16px;
+  width: 50%;
+  margin-left: 48px;
+  li {
+    list-style-type: none;
+    text-align: left;
+  }
 }
