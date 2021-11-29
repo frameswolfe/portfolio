@@ -2,7 +2,7 @@ import React from "react";
 
   class TheGreenRoom extends React.Component {
     componentDidMount() {
-      window.location.href = "www.enterthegreenroom.co.uk";
+      window.open("www.enterthegreenroom.co.uk", "_blank");
     }
 
     render() {
