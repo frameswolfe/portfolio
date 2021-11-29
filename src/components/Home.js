@@ -1,13 +1,20 @@
 import React from "react"
 import TypeWriter from 'react-typewriter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Home(props) {
   return (
     <div className="home">
+    <div className="home-container">
       <div className="home-title">
         <h1>James Wolfe</h1>
         <TypeWriter typing={1} fixed={true}>Full Stack Developer</TypeWriter>
       </div>
+      <div className="home-resume">
+          <FontAwesomeIcon icon={faFileAlt} />
+      </div>
+    </div>
       <div className="home-text">
         <div className="home-text-left">
           <h2>Welcome</h2>

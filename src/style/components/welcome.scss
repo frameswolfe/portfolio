@@ -1,24 +1,42 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  align-items: center;
+}
+
+.home-title {
+  text-align: left;
+  width: 60%;
+  font-size: 20px;
+  margin-right: 48px;
+}
+
+.home-resume {
+  width: 40%;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 48px;
+}
+
 .home-text {
-  max-height: 50vh;
+max-height: 50vh;
 position: absolute;
 text-align: left;
 bottom: 0px;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 padding: 24px 16px;
 // align-items: baseline;
 }
 
 .home-text-left {
-  width: 50%;
+  width: 60%;
   margin-right: 48px;
 }
 
 .home-text-right {
-  width: 50%;
+  width: 40%;
   margin-left: 48px;
-  li {
-    list-style-type: none;
-    text-align: left;
-  }
+  list-style-type: none;
 }
