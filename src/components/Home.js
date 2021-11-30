@@ -2,6 +2,8 @@ import React from "react"
 import TypeWriter from 'react-typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+// import { Document, Page } from "react-pdf/dist/entry.webpack";
+// import resume from "../data/resume"
 
 function Home(props) {
   return (
@@ -12,7 +14,9 @@ function Home(props) {
         <TypeWriter typing={1} fixed={true}>Full Stack Developer</TypeWriter>
       </div>
       <div className="home-resume">
-          <FontAwesomeIcon icon={faFileAlt} />
+          <a href = "https://www.google.co.uk" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFileAlt} />
+          </a>
       </div>
     </div>
       <div className="home-text">
