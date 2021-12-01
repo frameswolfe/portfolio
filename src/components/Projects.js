@@ -3,15 +3,12 @@ import Thumbnail from "./Thumbnail";
 import YoutubeEmbed from "./YoutubeEmbed";
 import homepage from "../images/homepage.png"
 import placeholder from "../images/placeholder.png"
-import '../App.css';
-
-console.log(homepage);
 
 function Projects(props) {
   return(
     <div className="content-container">
       <h1 className="title">Projects</h1>
-      <div className="thumbnail-container">
+      <div data-aos='flip-up' className="thumbnail-container">
         <YoutubeEmbed embedId="me5B9C6wmac" />
       </div>
       <div className="thumbnail-container">
