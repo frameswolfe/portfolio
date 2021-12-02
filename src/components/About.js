@@ -1,27 +1,28 @@
-import React, { useState} from "react"
+import React from "react" // { useState }
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
-import { Document, Page, pdfjs } from "react-pdf";
-import Modal from 'react-bootstrap/Modal';
-import resume from '../data/resume.pdf'
+// import { Document, Page, pdfjs } from "react-pdf";
+// import Modal from 'react-bootstrap/Modal';
+// import resume from '../data/resume.pdf'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { MdWork, MdSchool } from "react-icons/md"
 import { SiRubyonrails } from "react-icons/si"
 import 'react-vertical-timeline-component/style.min.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function About(props) {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <div className="content-container">
       <h1 className="title">About</h1>
       <div className="">
         <h6>Click here for my resume:
-          <FontAwesomeIcon icon={faFileAlt} onClick={handleShow}/>
+          <FontAwesomeIcon icon={faFileAlt} /* onClick={handleShow} *//>
+
         </h6>
       </div>
       <VerticalTimeline>
@@ -116,7 +117,7 @@ function About(props) {
           icon={<SiRubyonrails />}
         />
       </VerticalTimeline>
-      <Modal show={show} onHide={handleClose} animation={false} size="lg"
+      {/* <Modal show={show} onHide={handleClose} animation={false} size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered>
         <Modal.Body>
@@ -126,7 +127,7 @@ function About(props) {
             <Page pageNumber={1} />
           </Document>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
     </div>
   )
 }
