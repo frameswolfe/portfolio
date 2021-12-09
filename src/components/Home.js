@@ -1,17 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import TypeWriter from 'react-typewriter';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
-// import { Document, Page } from "react-pdf/dist/entry.webpack";
-// import resume from "../data/resume"
+import { Document, Page, pdfjs } from "react-pdf";
+import Modal from 'react-bootstrap/Modal';
+import resume from '../data/resume.pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Home(props) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="home">
     <div className="home-container">
       <div className="home-title">
-        <h1>James Wolfe</h1>
-        <TypeWriter typing={1} fixed={true}>Full Stack Developer</TypeWriter>
+        <h1 className="home-title-name">James Wolfe | </h1>
+        <h1 className="home-title-cv" onClick={handleShow}>CV</h1>
+        <div>
+          <TypeWriter typing={1} fixed={true}>Full Stack Developer</TypeWriter>
+        </div>
       </div>
       <div className="home-resume">
       </div>
@@ -38,6 +46,17 @@ function Home(props) {
             <li>Git</li>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose} animation={false} size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered>
+        <Modal.Body>
+          <Document
+            file={resume}
+          >
+            <Page pageNumber={1} />
+          </Document>
+        </Modal.Body>
+      </Modal>
     </div>
   )
 }
