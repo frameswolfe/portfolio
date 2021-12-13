@@ -7,9 +7,9 @@
 }
 
 .container {
-  margin-top: max(140px, 23.6vh);
+  margin-top: max(145px);
   border-right: 1px solid white;
-  padding: 8px 16px;
+  padding: 12px 16px 0px 16px;
   height: 72vh;
   overflow: scroll;
   // margin-top: 17.6vh;
@@ -31,5 +31,6 @@
 
 .title {
   position: absolute;
-  top: 2.5vh;
+  top: 17px;
+  font-size: 40px
 }

@@ -8,10 +8,9 @@
 
 .home-title {
   text-align: left;
-  width: 60%;
   font-size: 20px;
   margin-right: 48px;
-  padding-bottom: 10vh;
+  padding-bottom: 13.5vh;
 }
 
 .home-title-name {
@@ -28,12 +27,9 @@
   }
 }
 
-.home-resume {
-  width: 40%;
-  font-size: 32px;
-  text-align: left;
-  margin-left: 48px;
-  padding-bottom: 10vh;
+.home-subtitle {
+  margin-top: 4px;
+  font-size: 28px;
 }
 
 .home-text {
@@ -43,7 +39,7 @@ text-align: left;
 bottom: 0px;
 display: flex;
 justify-content: space-between;
-padding: 24px 16px;
+padding-left: 16px;
 // align-items: baseline;
 }
 

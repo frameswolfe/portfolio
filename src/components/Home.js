@@ -17,12 +17,11 @@ function Home(props) {
       <div className="home-title">
         <h1 className="home-title-name">James Wolfe | </h1>
         <h1 className="home-title-cv" onClick={handleShow}>CV</h1>
-        <div>
+        <div className="home-subtitle">
           <TypeWriter typing={1} fixed={true}>Full Stack Developer</TypeWriter>
         </div>
       </div>
-      <div className="home-resume">
-      </div>
+      {/* <div className="home-resume"></div> */}
     </div>
       <div className="home-text">
         <div className="home-text-left">
